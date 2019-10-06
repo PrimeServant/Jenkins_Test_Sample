@@ -14,4 +14,13 @@ public class MyCalculatorTest {
         double expected =  5;
         assertThat(result,is(expected));
     }
+
+
+    @Test
+    public void circleTest(){
+        MyCalculator myCalculator = new MyCalculator();
+        double result = myCalculator.calcCircleSquare(4.0);
+        double expected =  50.24;
+        assertThat(result,is(expected));
+    }
 }
